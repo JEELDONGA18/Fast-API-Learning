@@ -1,0 +1,31 @@
+Q. Why we use the uvicorn ??
+A. Uvicorn is a lightning-fast ASGI web server that acts as the bridge between your FastAPI application and the internet, handling network communication, such as receiving requests and sending responses. 
+
+Q. We have the package of the python latest version now we suppose we install some libraries so it will download in the python package but when we create the virtual environment then is it will create as the subpackage inside the python package or it will create as the new entity ?
+A. A virtual environment is a NEW, SEPARATE entity.
+   It is NOT a sub-package inside the main Python installation.
+
+
+Q. but in the virtual environment pip is already work so python in that also there so how this works?
+A. A virtual environment does NOT install a new Python.
+   It reuses the system Python but gives it a NEW, ISOLATED context (pip + packages).
+   means in the venv only pip is installed 
+
+   Example : 
+
+   (FastAPILearning) PS P:\LEARNING\FAST API> pip list
+    Package    Version
+    ---------- -------
+    pip        23.0.1
+    setuptools 65.5.0
+
+    [notice] A new release of pip is available: 23.0.1 -> 25.3
+    [notice] To update, run: python.exe -m pip install --upgrade pip
+
+
+--> Command to Create the virtual environment : python -m venv VEnvName  (where, -m = mode)
+--> Command to Activate the virtual environment : VEnvName\Scripts\activate  (using CMD)
+                                                : VEnvName\Scripts\Activate.ps1  (using PowerShell)
+                                                : Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned (if error in the PowerShell)
+                                                : source VEnvName/bin/activate  (macOS / Linux - Terminal)
+--> Command to Activate the virtual environment : deactivate
