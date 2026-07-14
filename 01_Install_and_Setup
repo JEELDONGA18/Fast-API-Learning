@@ -31,3 +31,7 @@ A. A virtual environment does NOT install a new Python.
 --> Command to Activate the virtual environment : deactivate
 
 --> Command to run the server : uvicorn filename:app --reload (Here, app = instance created for the FastAPI())
+
+--> To check the api is working or not, FastAPI have two Swagger UI's :
+1. Docs --> To open this : https://localhost:8000/docs
+1. Redoc --> To open this : https://localhost:8000/redoc
