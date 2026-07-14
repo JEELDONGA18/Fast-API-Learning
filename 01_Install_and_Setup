@@ -29,3 +29,5 @@ A. A virtual environment does NOT install a new Python.
                                                 : Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned (if error in the PowerShell)
                                                 : source VEnvName/bin/activate  (macOS / Linux - Terminal)
 --> Command to Activate the virtual environment : deactivate
+
+--> Command to run the server : uvicorn filename:app --reload (Here, app = instance created for the FastAPI())
