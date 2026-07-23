@@ -1,3 +1,4 @@
+# to test the get method we can simply change the browser URL..
 
 from fastapi import FastAPI
 
